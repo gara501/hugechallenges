@@ -1,0 +1,39 @@
+.header {
+  align-items: center;
+  box-shadow: 0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
+  display: flex;
+  min-height: 100px;
+  flex-flow: row nowrap;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header-section-right {
+  padding: 0 10px;
+}
+
+.header-user-profile {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.header-user-profile img {
+  height: 50px;
+  width: 50px;
+}
+
+.header-user-profile-item {
+  margin-left: 30px;
+}
+
+.header .h-logo__svg {
+  fill: var(--huge-black);
+}

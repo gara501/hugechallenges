@@ -1,0 +1,26 @@
+.hero {
+  background: var(--huge-black);
+  color: var(--huge-white);
+  height: 400px;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-logo {
+  margin: 50px 0 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.h-logo__svg {
+  fill: white;
+  height: auto;
+  transition: all .5s ease;
+  width: 20px;
+}
+
+.h-logo__svg:hover {
+  fill: var(--huge-magenta);
+  transform: scale(1.2);
+}

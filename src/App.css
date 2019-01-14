@@ -1,0 +1,115 @@
+/* Webfont: HUGE-AvantGarde-Bold */@font-face {
+  font-family: 'HUGEAvantGarde';
+  src: url('../public/fonts/HUGE-AvantGarde-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../public/fonts/HUGE-AvantGarde-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../public/fonts/HUGE-AvantGarde-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../public/fonts/HUGE-AvantGarde-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../public/fonts/HUGE-AvantGarde-Bold.svg#HUGE-AvantGarde-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --font-mono: 'Major Mono Display', monospace;
+  --font-quicksand: 'Quicksand', sans-serif;
+  --font-staat: 'Staatliches', cursive;
+  --font-huge: 'HUGEAvantGarde', georgia;
+  --base-font-size: 1rem;
+  --huge-black: #000;
+  --huge-grey: #808080;
+  --huge-hover-bg: #f8f8f8;
+  --huge-grey-dark: #232222;
+  --huge-magenta: #ec008c;
+  --huge-grey-light: #f3f3f3;
+  --huge-white: #fff;
+  --huge-blue: #2fbbf9;
+  --huge-bg-modal: rgba(0,0,0,0.4);
+  --huge-bg-modal-white: rgba(255,255,255,.85);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+p, a, label, input {
+  font-family: var(--font-quicksand);
+}
+
+p {
+  font-family: var(--font-quicksand);
+  font-weight: 300;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3,h4 ,h5 ,h6 {
+  font-family: var(--font-huge);
+  letter-spacing: -.3125rem;
+}
+
+h1 {
+  font-size: calc(var(--base-font-size) * 7);
+  letter-spacing: -.3125rem;
+}
+h2 {
+  font-size: calc(var(--base-font-size) * 6);
+}
+h3 {
+  font-size: calc(var(--base-font-size) * 5);
+}
+h4 {
+  font-size: calc(var(--base-font-size) * 4);
+}
+h5 {
+  font-size: calc(var(--base-font-size) * 3);
+}
+h6 {
+  font-size: calc(var(--base-font-size) * 2);
+}
+
+.button {
+  color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial,sans-serif;
+  font-weight: bold;
+  padding: 0 20px;
+	text-align: center;
+	text-decoration: none !important;
+	-webkit-transition: background-color 0.3s,opacity 0.3s;
+	-moz-transition: background-color 0.3s,opacity 0.3s;
+	-o-transition: background-color 0.3s,opacity 0.3s;
+	transition: background-color 0.3s,opacity 0.3s;
+}
+
+.button.load {
+	-webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+	-moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+	-o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+	transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+.button.black {
+	background: var(--huge-black);
+	width: 200px;
+	height: 54px;
+  line-height: 54px;
+  margin: 0;
+	font-size: 16px;
+}
+
+.button:hover {
+	background-color: #ec008c !important;
+	color: #fff;
+}
+
+.login-button {
+  margin: 50px 0;
+  text-align: center;
+}
