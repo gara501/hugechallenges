@@ -33,7 +33,7 @@ class Challenges extends React.Component {
 
   render() {
     return (
-    <div className="challenges">
+    <div className="challenges container">
      <h3>Challenges</h3>
      <ul className="challenges-list">
       {this.state.items.map((item) => {

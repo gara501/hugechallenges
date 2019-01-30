@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Challenges from "./components/Challenges/Challenges";
 import Rules from "./components/Rules/Rules";
 import Leaderboard from "./components/Leaderboard/Leaderboard";
-import "./components/Menu/Menu.css";
 import "./Home.css";
 
 const Index = () => <h2>Home</h2>;
