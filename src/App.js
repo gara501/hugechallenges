@@ -12,10 +12,9 @@ class App extends Component{
 
     const {
       signInWithGoogle,
-      googleAccessToken,
       signOut,
       user,
-      error 
+      error
     } = this.props;
     if (user) {
       return <Home user={user} error={error} signOut={signOut} />;

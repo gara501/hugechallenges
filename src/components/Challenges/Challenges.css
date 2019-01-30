@@ -1,0 +1,14 @@
+.challenges {
+  
+}
+.challenges-list {
+  margin: 0;
+  padding: 0;
+}
+
+.challenges-list-item {
+  border: 1px solid var(--huge-grey);
+  border-radius: 5px;
+  list-style: none;
+  margin: 20px 0;
+}

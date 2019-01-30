@@ -48,9 +48,16 @@ p {
   margin: 0 auto;
 }
 
+.marginv {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 h1, h2, h3,h4 ,h5 ,h6 {
   font-family: var(--font-huge);
   letter-spacing: -.3125rem;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
