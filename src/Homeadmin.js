@@ -34,6 +34,9 @@ const Home = props => {
                   <Link to="/challenges/"><i className="material-icons">list_alt</i>Challenges</Link>
                 </li>
                 <li>
+                  <Link to="/challengesadmin/"><i className="material-icons">list_alt</i>Challenges Admin</Link>
+                </li>
+                <li>
                   <Link to="/rules/"><i className="material-icons">memory</i>Rules</Link>
                 </li>
               </ul>

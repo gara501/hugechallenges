@@ -1,4 +1,28 @@
 .leaderboard {
-  background: var(--huge-black);
-  color: var(--huge-white); 
+  color: var(--huge-black); 
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 40px 0;
+  padding: 0;
+}
+
+.leaderboard-list-item {
+  border-bottom: 1px solid var(--huge-grey);
+  flex: 1;
+}
+
+.leaderboard-list-item-items {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.leaderboard-list-item-items p,
+.leaderboard-list-item-items h4 {
+  flex: 1;
 }

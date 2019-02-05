@@ -3,6 +3,7 @@ import {hot} from "react-hot-loader";
 import firebase from "./config/firebaseConfig";
 import withFirebaseAuth from "react-auth-firebase";
 import Home from "./Home";
+import Homeadmin from "./Homeadmin";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
@@ -16,8 +17,14 @@ class App extends Component{
       user,
       error
     } = this.props;
+    console.log('user', user);
+    
     if (user) {
-      return <Home user={user} error={error} signOut={signOut} />;
+      if (user.email === 'goramirez@hugeinc.com') {
+        return <Homeadmin user={user} error={error} signOut={signOut} />;
+      } else {
+        return <Home user={user} error={error} signOut={signOut} />;
+      }  
     }
 
     return(

@@ -34,7 +34,7 @@ body {
   padding: 0;
 }
 
-p, a, label, input {
+p, a, label, input, ul, ol {
   font-family: var(--font-quicksand);
 }
 
@@ -55,7 +55,7 @@ p {
 
 h1, h2, h3,h4 ,h5 ,h6 {
   font-family: var(--font-huge);
-  letter-spacing: -.3125rem;
+  letter-spacing: -.1125rem;
   margin: 0;
   padding: 0;
 }
@@ -65,19 +65,19 @@ h1 {
   letter-spacing: -.3125rem;
 }
 h2 {
-  font-size: calc(var(--base-font-size) * 6);
-}
-h3 {
   font-size: calc(var(--base-font-size) * 5);
 }
-h4 {
-  font-size: calc(var(--base-font-size) * 4);
-}
-h5 {
+h3 {
   font-size: calc(var(--base-font-size) * 3);
 }
-h6 {
+h4 {
   font-size: calc(var(--base-font-size) * 2);
+}
+h5 {
+  font-size: calc(var(--base-font-size) * 1.7);
+}
+h6 {
+  font-size: calc(var(--base-font-size) * 1.5);
 }
 
 .button {
@@ -119,4 +119,8 @@ h6 {
 .login-button {
   margin: 50px 0;
   text-align: center;
+}
+
+.top-space {
+  margin-top: 20px;
 }
